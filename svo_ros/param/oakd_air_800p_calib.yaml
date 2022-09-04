@@ -1,0 +1,56 @@
+cameras:
+- camera:
+    distortion:
+      parameters:
+        cols: 1
+        rows: 4
+        data: [-7.703825950622559, 49.4111442565918, -0.0005467327428050339, 0.0009471977245993912]
+      type: radial-tangential
+    image_height: 800
+    image_width: 1280
+    intrinsics:
+      cols: 1
+      rows: 4
+      data: [798.2200927734375, 797.7920532226563, 638.4974365234375, 401.3921813964844]
+    label: left_camera
+    line-delay-nanoseconds: 0
+    type: pinhole
+  T_B_C:
+    cols: 4
+    rows: 4
+    data: [ 1., 0., 0., -0.036976,
+            0., 1., 0., 0.000114,
+            0., 0., 1., 0.000229,
+            0., 0., 0., 1.
+          ]
+  serial_no: 0
+  calib_date: 0
+  description: 'left cam'
+- camera:
+    distortion:
+      parameters:
+        cols: 1
+        rows: 4
+        data: [-2.6694657802581787, 24.126605987548828, -0.0025899794418364763, -0.0020917989313602448]
+      type: radial-tangential
+    image_height: 800
+    image_width: 1280
+    intrinsics:
+      cols: 1
+      rows: 4
+      data: [802.41162109375, 802.0161743164063, 644.1166381835938, 413.2668151855469]
+    label: right_camera
+    line-delay-nanoseconds: 0
+    type: pinhole
+  T_B_C:
+    cols: 4
+    rows: 4
+    data: [ 1., 0., 0., 0.036396,
+            0., 1., 0., 0.000101,
+            0., 0., 1., -0.001030,
+            0., 0., 0., 1.
+          ]
+  serial_no: 0
+  calib_date: 0
+  description: 'right cam'
+label: oakd_forward_stereo
