@@ -5,7 +5,7 @@ cameras:
         cols: 1
         rows: 4
         data: [-7.703825950622559, 49.4111442565918, -0.0005467327428050339, 0.0009471977245993912]
-      type: radial-tangential
+      type: none
     image_height: 800
     image_width: 1280
     intrinsics:
@@ -32,7 +32,7 @@ cameras:
         cols: 1
         rows: 4
         data: [-2.6694657802581787, 24.126605987548828, -0.0025899794418364763, -0.0020917989313602448]
-      type: radial-tangential
+      type: none
     image_height: 800
     image_width: 1280
     intrinsics:
