@@ -371,8 +371,10 @@ void SvoInterface::stereoCallback(
 
   cv::Mat img0, img1;
   try {
-    img0 = cv_bridge::toCvShare(msg0, "mono8")->image;
-    img1 = cv_bridge::toCvShare(msg1, "mono8")->image;
+    // img0 = cv_bridge::toCvShare(msg0, "mono8")->image;
+    // img1 = cv_bridge::toCvShare(msg1, "mono8")->image;
+    img0 = cv_bridge::toCvShare(msg0)->image;
+    img1 = cv_bridge::toCvShare(msg1)->image;
   } catch (cv_bridge::Exception& e) {
     ROS_ERROR("cv_bridge exception: %s", e.what());
   }
